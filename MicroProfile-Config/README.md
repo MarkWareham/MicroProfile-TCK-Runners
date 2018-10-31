@@ -26,6 +26,6 @@ There is a profile for running against Payara Micro called payara-micro-managed.
 
 ## Run against Payara Embedded
 
-There is a profile for running against Payara Embedded All called payara-embedded. To run tests against Payara Embedded All, do the following:
+There is a profile for running against Payara Embedded All called payara-server-embedded. To run tests against Payara Embedded All, do the following:
 
-    Run tests in the tck-runner project via maven, replacing ${version} with the version of Payara Embedded All you wish to test against: cd tck-runner && mvn clean -Ppayara-embedded test -Dpayara.version=${version}
+    Run tests in the tck-runner project via maven, replacing ${version} with the version of Payara Embedded All you wish to test against: cd tck-runner && mvn clean -Ppayara-server-embedded test -Dpayara.version=${version}

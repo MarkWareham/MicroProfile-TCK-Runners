@@ -30,8 +30,8 @@ The Asynchronous Bulkhead and Asynchronous Bulkhead Retry are currently disabled
 
 # Run against Payara Embedded
 
-There is a profile for running against Payara Embedded All called `payara-embedded`. To run tests against Payara Embedded All, do the following:
+There is a profile for running against Payara Embedded All called `payara-server-embedded`. To run tests against Payara Embedded All, do the following:
 
-1. Run tests in the tck-runner project via maven, replacing ${version} with the version of Payara Embedded All you wish to test against: `cd tck-runner && mvn clean -Ppayara-embedded test -Dpayara.version=${version}`
+1. Run tests in the tck-runner project via maven, replacing ${version} with the version of Payara Embedded All you wish to test against: `cd tck-runner && mvn clean -Ppayara-server-embedded test -Dpayara.version=${version}`
 
 The illegalConfig and invalidParameters tests are disabled due to the tests a) expecting failures earlier than Payara throws them, and b) looking for the wrong exception.
