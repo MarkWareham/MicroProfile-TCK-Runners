@@ -323,59 +323,5 @@
                 <jersey.version>2.25.1</jersey.version>
             </properties>
         </profile>
-
-        <profile>
-            <id>payara-embedded-4</id>
-
-            <properties>
-                <jersey.version>2.25.1</jersey.version>
-            </properties>
-
-            <build>
-                <testResources>
-                    <testResource>
-                        <directory>src/test/resources</directory>
-                        <filtering>true</filtering>
-                    </testResource>
-                    <testResource>
-                        <directory>src/test/resources-glassfish-embedded</directory>
-                        <filtering>true</filtering>
-                    </testResource>
-                </testResources>
-            </build>
-
-            <dependencies>
-                <dependency>
-                    <groupId>fish.payara.arquillian</groupId>
-                    <artifactId>arquillian-payara-server-4-embedded</artifactId>
-                    <version>${payara.arquillian.container.version}</version>
-                    <scope>test</scope>
-                </dependency>
-                <dependency>
-                    <groupId>fish.payara.arquillian</groupId>
-                    <artifactId>payara-client-ee7</artifactId>
-                    <version>${payara.arquillian.container.version}</version>
-                    <scope>test</scope>
-                </dependency>
-                <dependency>
-                    <groupId>fish.payara.extras</groupId>
-                    <artifactId>payara-embedded-all</artifactId>
-                    <version>${payara.version}</version>
-                    <scope>test</scope>
-                </dependency>
-                <dependency>
-                    <groupId>org.glassfish.tyrus</groupId>
-                    <artifactId>tyrus-client</artifactId>
-                    <version>${tyrus.version}</version>
-                    <scope>test</scope>
-                </dependency>
-                <dependency>
-                    <groupId>org.glassfish.tyrus</groupId>
-                    <artifactId>tyrus-container-grizzly-client</artifactId>
-                    <version>${tyrus.version}</version>
-                    <scope>test</scope>
-                </dependency>
-            </dependencies>
-        </profile>
     </profiles>
 </project>
